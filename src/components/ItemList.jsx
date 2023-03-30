@@ -1,4 +1,5 @@
 import FavIcon from '../assets/svg/fav-icon.svg';
+import FavIconActive from '../assets/svg/fav-icon-active.svg';
 
 function ItemList(props) {
   return (
@@ -35,7 +36,12 @@ function ItemList(props) {
       <div className="fav-button">
         <input type="checkbox" id={`fav-button-${props.id}`} />
         <label htmlFor={`fav-button-${props.id}`}>
-          <img src={FavIcon} alt="Favoritar produto" />
+          <img className="fav-icon" src={FavIcon} alt="Favoritar produto" />
+          <img
+            className="fav-icon-active"
+            src={FavIconActive}
+            alt="Favoritar produto"
+          />
         </label>
       </div>
     </div>

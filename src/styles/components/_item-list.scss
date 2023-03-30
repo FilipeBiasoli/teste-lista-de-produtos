@@ -4,6 +4,7 @@
   padding: 25px;
   max-width: 245px;
   transition: all 0.5s;
+  position: relative;
 
   &:hover {
     box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
@@ -129,11 +130,39 @@
       display: none;
 
       & + label {
+        cursor: pointer;
+
+        img {
+          width: 38px;
+          height: 38px;
+          position: absolute;
+          right: 25px;
+          top: 25px;
+
+          &.fav-icon-active {
+            display: none;
+          }
+        }
+
         &:hover {
+          .fav-icon-active {
+            display: block;
+          }
+
+          .fav-icon {
+            display: none;
+          }
         }
       }
 
       &:checked + label {
+        .fav-icon-active {
+          display: block;
+        }
+
+        .fav-icon {
+          display: none;
+        }
       }
     }
   }
