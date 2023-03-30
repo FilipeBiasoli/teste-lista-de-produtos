@@ -110,7 +110,8 @@
         font-size: 0;
 
         &::after {
-          content: 'ADICIONADO';
+          content: '\f00c  ADICIONADO';
+          font-family: 'Font Awesome 5 Free', 'Roboto', sans-serif;
           display: flex;
           justify-content: center;
           align-items: center;
