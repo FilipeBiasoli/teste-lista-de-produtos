@@ -1,0 +1,27 @@
+// ≥576px (small)
+@mixin screen-sm {
+  @media (min-width: 576px) {
+    @content;
+  }
+}
+
+// ≥768px (medium)
+@mixin screen-md {
+  @media (min-width: 768px) {
+    @content;
+  }
+}
+
+// ≥992px (large)
+@mixin screen-lg {
+  @media (min-width: 992px) {
+    @content;
+  }
+}
+
+// ≥1200px (extra large)
+@mixin screen-xl {
+  @media (min-width: 1200px) {
+    @content;
+  }
+}
